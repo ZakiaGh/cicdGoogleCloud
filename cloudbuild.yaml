@@ -14,5 +14,9 @@ steps:
   - name: 'node'
     args: ['npm', 'install']
     dir: 'jsproject'
-  # - name: 'node'
-  #   args: []
+  - name: 'node'
+    args: ['npm', 'run', 'build']
+    dir: 'jsproject'
+  - name: 'node'
+    args: ['npm', 'run', 'test']
+    dir: 'jsproject'
