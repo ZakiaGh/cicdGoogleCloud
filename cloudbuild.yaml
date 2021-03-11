@@ -5,7 +5,7 @@ steps:
     args: ['mvn', test]
   - name: 'gcr.io/cloud-builders/docker' 
     args: ['login', '-u', '20112021', '-p', '8568af0b-e286-45bc-bdfe-9205367035ca']
-  # - name: 'gcr.io/cloud-builders/docker'
-  #   args: ['build']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['test', '-t', '20112021/java', '.']
   # - name: 'gcr.io/cloud-builders/docker'
   #   args: [push]
