@@ -13,3 +13,6 @@ steps:
 #node
   - name: 'node'
     args: ['npm', 'install']
+    dir: 'jsproject'
+  # - name: 'node'
+  #   args: []
