@@ -4,12 +4,6 @@ steps:
     args: [ 'mvn', 'clean', 'install', '-DskipTest']
   - name: 'maven'
     args: ['mvn', test]
-  # - name: 'gcr.io/cloud-builders/docker' 
-  #   args: ['login', '-u', '20112021', '-p', '8568af0b-e286-45bc-bdfe-9205367035ca']
-  # - name: 'gcr.io/cloud-builders/docker'
-  #   args: ['build', '-t', '20112021/java', '.']
-  # - name: 'gcr.io/cloud-builders/docker'
-  #   args: ['push', '20112021/java']
 #node
   - name: 'node'
     args: ['npm', 'install']
