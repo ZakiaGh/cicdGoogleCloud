@@ -20,3 +20,14 @@ steps:
   - name: 'node'
     args: ['npm', 'run', 'test']
     dir: 'jsproject'
+#docker
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['login', '-u', '20112021', '-p', '8568af0b-e286-45bc-bdfe-9205367035ca']
+    dir: 'jsproject'
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', '20112021/java', '.']
+    dir: 'jsproject'
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', '20112021/java']
+    dir: 'jsproject'
+
