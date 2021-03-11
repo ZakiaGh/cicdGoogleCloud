@@ -1,4 +1,5 @@
 steps:
+#maven
   - name: 'maven'
     args: [ 'mvn', 'clean', 'install', '-DskipTest']
   - name: 'maven'
@@ -9,3 +10,6 @@ steps:
     args: ['build', '-t', '20112021/java', '.']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', '20112021/java']
+#node
+  - name: 'node'
+    args: ['npm', 'install']
