@@ -7,5 +7,5 @@ steps:
     args: ['login', '-u', '20112021', '-p', '8568af0b-e286-45bc-bdfe-9205367035ca']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', '20112021/java', '.']
-  # - name: 'gcr.io/cloud-builders/docker'
-  #   args: [push]
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [push, '-t', '20112021/java', '.']
