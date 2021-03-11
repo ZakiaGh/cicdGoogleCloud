@@ -8,4 +8,4 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', '20112021/java', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', '-t', '20112021/java', '.']
+    args: ['push', '20112021/java']
